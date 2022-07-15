@@ -1,0 +1,584 @@
+/* START OF GENERAL LAYOUT SECTION */
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: tahoma;
+}
+
+body{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+
+/* START OF NAVIGATION SECTION EDITS */
+
+.nav{
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    transition: 0.2s ease-in-out;
+    
+}
+
+/* START OF APPEAR EFFECT AFTER SCROLL */
+
+.nav2{
+    background-color: white;
+    width: 100vw;
+    height: 50px;
+    position: fixed;
+    z-index: 4;
+    top: 84px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: grey;
+    font-weight: 500;
+    border: solid 0.5px rgb(195, 195, 195);
+    transition: 0.2s ease-in-out;
+}
+
+
+.hide, .hide2{
+    opacity: 0;
+}
+
+.appear{
+    animation-name: revealnow;
+    animation-duration: 0.3s;
+    opacity: 1;
+}
+@keyframes revealnow {
+    from{transform: rotateX(90deg)}
+    to{transform: rotateX(0deg)}
+}
+
+.navsearch2{
+    position: relative;
+}
+
+.navsearch2 input{
+    width: 400px;
+    height: 40px;
+    padding-left: 20px;
+    font-size: 0.9rem;
+    border: solid 0.5px black;
+    border-radius: 5px;
+}
+
+.navreveal{
+    transition: 0.2s ease-in-out;
+    background-color: white;
+    color: grey;
+}
+
+.navreveal button{
+    color: green;
+    border-color: green;
+}
+
+.navbtn{
+    border: solid 0.5px green;
+    color: green;
+}
+
+.logoeffect{
+    opacity: 0;
+}
+
+
+.fiverlogo2{
+    position: absolute;
+    left: 32px;
+    top: 15px;
+    display: none;
+}
+
+/* END OF APPEAR EFFECT AFTER SCROLL */
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* overflow-x: hidden; */
+    align-items: center;
+    padding: 0px 40px;
+    position: relative;
+    margin-right: 20px;
+    color: white;
+    font-weight: 700;
+}
+
+.hide2 p {
+    cursor: pointer;
+}
+
+
+.navsearch2 img{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0px;
+    padding: 10px;
+    background-color: rgb(34,35,37);
+    z-index: 2;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+
+.navsection1 img{
+    width: 100px;
+}
+
+.navsection2{
+    display: flex;
+    align-items: center;
+}
+
+.navbutton{
+    padding: 5px 20px;
+    font-weight: 700;
+    border: solid 1px white;
+    border-radius: 5px;
+    color: white;
+    background-color: transparent;
+    transition: 0.2s ease-in-out;
+}
+
+.navsection2 ul{
+    display: flex;
+    align-items: center;
+}
+
+.navsection2 ul li{
+    list-style: none;
+    padding-right: 20px;
+
+}
+/* START OF ENGLISH NAV BAR WITH GLOBE IMAGE EDITS */
+.navsection2 ul li:nth-child(3){
+    align-items: center;
+    display: flex;
+}
+
+/* END OF ENGLISH NAV BAR WITH GLOBE IMAGE EDITS */
+
+.navsidetext p {
+    font-size: 3rem;
+}
+
+.navsearch input{
+    width: 610px;
+    height: 50px;
+    font-size:1rem;
+    padding-left: 40px;
+    border: none;
+    border-radius: 4px;
+}
+
+.navsearch{
+    align-items: center;
+    position: relative;
+    padding-top: 20px;
+
+}
+
+.navsearch img{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 15px;
+    top: 35px;
+}
+
+.navsearch button{
+    margin-top: 20px;
+    width: 100px;
+    height: 50px;
+    font-size: 1rem;
+    background-color: rgb(29,191,115);
+    border: none;
+    color: white;
+    position: absolute;
+    top: 0px;
+    right: -3px;
+    margin-right: 3px;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.navundersection h4{
+    padding-right: 10px;
+    padding-top: 2px;
+    font-size: 0.8rem;
+}
+
+.navundersection p {
+    font-size: 0.7rem;
+    margin-right: 10px;
+    border: solid 1px white;
+    width: 110px;
+    padding: 5px 9px;
+    border-radius: 40px;
+    text-align: center;
+
+}
+
+.navundersection{
+    padding-top: 20px;
+    display: flex;
+}
+
+/* END OF NAVIGATION SECTION EDITS */
+/* START OF POST HERO SECTION */
+.postherosection img{
+    width: 110vw;
+    height: 100vh;
+    margin-right: 20px;
+}
+
+.postherosectioninner{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.postherosection{
+    overflow: hidden;
+    width: 560%;
+}
+
+
+/* END OF POST HERO SECTION */
+/* START OF BACKGROUD IMAGES TRIAL SECTION */
+/* IMAGES ONE */
+.image1{
+    display: none;
+    background-image: url('images/carousel-image1.webp');
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: 114vw 100vh;
+    position: relative;
+}
+
+.image1 p{
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+    animation-name: switch;
+    animation-duration: .10s;
+    animation-timing-function: ease-in-out;
+}
+
+/* IMAGES TWO */
+.image2{
+    display: none;
+    background-image: url('images/carousel-image2.webp');
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: 114vw 100vh;
+    position: relative;
+}
+
+.image2 p{
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+    animation-name: switch;
+    animation-duration: .10s;
+    animation-timing-function: ease-in-out;
+}
+
+/* IMAGE THREE */
+.image3{
+    display: none;
+    background-image: url('images/carousel-image3.webp');
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: 114vw 100vh;
+    position: relative;
+}
+
+.image3 p{
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+    animation-name: switch;
+    animation-duration: .10s;
+    animation-timing-function: ease-in-out;
+}
+
+/* IMAGE FOUR */
+.image4{
+    display: none;
+    background-image: url('images/carousel-image4.webp');
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: 114vw 100vh;
+    position: relative;
+}
+
+.image4 p{
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+    animation-name: switch;
+    animation-duration: .10s;
+    animation-timing-function: ease-in-out;
+}
+
+/* IMAGE FIVE */
+.image5{
+    display: none;
+    background-image: url('images/carousel-image5.webp');
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: 114vw 100vh;
+    position: relative;
+}
+
+
+
+.image5 p{
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+    animation-name: switch;
+    animation-duration: .10s;
+    animation-timing-function: ease-in-out;
+}
+
+
+.stars{
+    position: absolute;
+    bottom: 40px;
+    right: 90px;
+}
+
+@keyframes switch{
+    from{opacity : 0.8}
+    to{opacity : 1}
+}
+
+.backgroundimagesgallery{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.switchimage{
+    animation-name: switch;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes switch{
+    from{opacity : 0.8}
+    to{opacity : 1}
+}
+
+
+/* END OF BACKGROUD IMAGES TRIAL SECTION */
+
+
+/* HERO SECTION */
+
+.herosection{
+    position: relative;
+    color: white;
+    
+}
+
+.navsidetext{
+    position: absolute;
+    top: 200px;
+    left: 20px;
+}
+
+/* START OF USERS LOGO SECTION */
+
+.users{
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    margin: auto;
+    justify-content: space-around;
+    padding: 10px 200px;
+    margin-bottom: 100px;
+    background-color: rgb(242, 241, 241);
+}
+
+.users p{
+    font-size: 1.3rem;
+    color: grey;
+    padding-right: 0px;
+
+}
+
+.users img{
+    width: 100px;
+}
+
+.users img:nth-child(3){
+    width: 70px;
+}
+
+.users img:nth-child(4){
+    width: 70px;
+}
+
+.users img:nth-child(5){
+    width: 50px;
+}
+
+.users img:nth-child(6){
+    width: 80px;
+}
+
+/* START OF POPULAR SERVICES SECTION */
+
+#popularheader{
+    font-size: 1.8rem;
+    font-weight:600;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.popularservicesoutter2{
+    width: 95%;
+    margin: auto;
+    padding-right: 20px;
+    position: relative;
+}
+
+.popularservicesoutter{
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    padding-bottom: 50px;
+}
+
+.popularservicesoutter::-webkit-scrollbar{
+    display: none;
+}
+
+.popularservices{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+
+.popularservicesmain{
+    width: 200%;
+    display: flex;
+}
+
+.popular1 img{
+    width: 230px;
+    height: 350px;
+}
+
+.popular1{
+    color: white;
+    position: relative;
+}
+
+.popular1 p{
+    position: absolute;
+    top: 10px;
+    z-index: 2;
+    left: 10px;
+}
+
+.popular1 h1{
+    position: absolute;
+    top: 30px;
+    z-index: 2;
+    left: 10px;
+    font-size: 1.8rem;
+    font-family: tahoma;
+}
+
+#prevarrowpopular{
+    position: absolute;
+    top: 200px;
+    left: -30px;
+    box-shadow: 5px 5px 20px #888888;
+    background-color: white;
+    border-radius: 50px;
+    padding: 10px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+#nextarrowpopular{
+    position: absolute;
+    top: 200px;
+    right: 10px;
+    box-shadow: 5px 5px 20px #888888;
+    background-color: white;
+    border-radius: 50px;
+    padding: 10px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+/* END OF POPULAR SERVICES SECTION */
+
+/* START OF world of freelance SECTION */
+.freelancesection{
+    width: 100%;
+    margin: auto;
+    padding: 60px 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(241,253,247);
+}
+
+.freelancesectioninner2{
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+}
+#tick{
+    width: 20px;
+    border: solid 2px grey;
+    padding: 2px;
+    border-radius: 50px;
+    margin-right: 5px;
+}
+
+.freelancesectioninner p{
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+}
+
+.freelancesectioninner2{
+    position: relative;
+}
+
+/* END OF world of freelance SECTION */
